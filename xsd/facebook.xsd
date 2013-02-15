@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns="http://br.com.gualda.soa.spring.facebook/facebook"
+            targetNamespace="http://br.com.gualda.soa.spring.facebook/facebook"
+            elementFormDefault="qualified"
+            attributeFormDefault="unqualified">
+  <xsd:element name="inputToken">
+    <xsd:complexType>
+        <xsd:sequence>
+            <xsd:element name="token" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="outputFacebook">
+    <xsd:complexType>
+        <xsd:sequence>
+            <xsd:element name="id" type="xsd:string"/>
+            <xsd:element name="first_name" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

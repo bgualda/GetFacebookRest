@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions
+     name="IFacebook"
+     targetNamespace="http://facebook.spring.soa.gualda.com.br/"
+     xmlns:tns="http://facebook.spring.soa.gualda.com.br/"
+     xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+     xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+     xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+     xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"
+    >
+    <wsdl:types>
+        <xsd:schema targetNamespace="http://facebook.spring.soa.gualda.com.br/" xmlns:tns="http://facebook.spring.soa.gualda.com.br/"
+             xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <xsd:complexType name="InterFace">
+                <xsd:sequence>
+                    <xsd:element name="arg0" type="xsd:string"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:element name="InterFace" type="tns:InterFace"/>
+            <xsd:complexType name="InterFaceResponse">
+                <xsd:sequence>
+                    <xsd:element name="return" minOccurs="0" maxOccurs="unbounded" type="xsd:string"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:element name="InterFaceResponse" type="tns:InterFaceResponse"/>
+        </xsd:schema>
+    </wsdl:types>
+    <wsdl:message name="InterFaceInput">
+        <wsdl:part name="parameters" element="tns:InterFace"/>
+    </wsdl:message>
+    <wsdl:message name="InterFaceOutput">
+        <wsdl:part name="parameters" element="tns:InterFaceResponse"/>
+    </wsdl:message>
+    <wsdl:portType name="IFacebook">
+        <wsdl:operation name="InterFace">
+            <wsdl:input message="tns:InterFaceInput" xmlns:ns1="http://www.w3.org/2006/05/addressing/wsdl"
+                 ns1:Action=""/>
+            <wsdl:output message="tns:InterFaceOutput" xmlns:ns1="http://www.w3.org/2006/05/addressing/wsdl"
+                 ns1:Action=""/>
+        </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>

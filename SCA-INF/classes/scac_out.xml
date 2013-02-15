@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Faults>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>FacebookMediator.mplan</file>
+      <name>FacebookMediator.mplan</name>
+      <fix/>
+      <msg>Case "restful-beans-facebook.facebookMediator.InterFace" doesnt have any payload transformation Please make sure source and target message part name are same and of same type. Otherwise, target reference may fail to execute with error message like "Input sourcelike Null" or "Part not found"</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>FacebookMediator.mplan</file>
+      <name>FacebookMediator.mplan</name>
+      <fix/>
+      <msg>Case "restful-beans-facebook.facebookMediator.InterFace_2" doesnt have any payload transformation Please make sure source and target message part name are same and of same type. Otherwise, target reference may fail to execute with error message like "Input sourcelike Null" or "Part not found"</msg>
+   </Fault>
+</Faults>
